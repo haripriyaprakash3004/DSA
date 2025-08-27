@@ -1,6 +1,6 @@
 class MinStack {
      Stack<Long> st;
-    long mini;
+    Long mini;
 
     public MinStack() {
         st = new Stack<>();
@@ -36,7 +36,7 @@ class MinStack {
         if(st.isEmpty()) return -1;
         Long val = st.peek();
         if(val < mini){
-            return (int) mini;
+            return mini.intValue();
         }
         else{
             return val.intValue();
@@ -45,7 +45,7 @@ class MinStack {
     }
     
     public int getMin() {
-        return (int) mini;
+        return mini.intValue();
     }
 }
 
