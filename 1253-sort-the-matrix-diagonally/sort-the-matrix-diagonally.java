@@ -10,18 +10,15 @@ class Solution {
         }
         return mat;
     }
-
     public void sort(int[][] mat,int row,int col,int m,int n){
         List<Integer> list = new ArrayList<>();
         int r = row;
         int c = col;
-
         while(r<m && c<n){
             list.add(mat[r][c]);
             r++;
             c++;
         }
-
         Collections.sort(list);
         r = row;
         c = col;
