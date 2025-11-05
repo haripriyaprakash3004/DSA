@@ -17,8 +17,8 @@ class Solution {
     int arr[] = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
     StringBuilder str = new StringBuilder();
     for(int i=0;i<arr.length;i++){
-        if(num >= arr[i] && num != 0){
-            int val = (int)num / arr[i];
+        if(num >= arr[i]){
+            int val = num / arr[i];
             for(int j=0;j<val;j++){
             str.append(map.get(arr[i]));
             }
