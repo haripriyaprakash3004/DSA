@@ -6,11 +6,12 @@ class Solution {
             dque.addLast(ele);
         }
         for(int i=0;i<k;i++){
-            int ele = dque.removeLast();
-            dque.addFirst(ele);
+            int num = dque.removeLast();
+            dque.addFirst(num);
         }
-        for(int i=0;i<nums.length;i++){
-            nums[i] = dque.removeFirst();
+        for(int j=0;j<nums.length;j++){
+            nums[j] = dque.removeFirst();
         }
+
     }
 }
